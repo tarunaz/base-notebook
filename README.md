@@ -9,9 +9,9 @@ This is a container image that runs Jupyter notebooks with Anaconda Python 2.7 w
 
 # Build the base image (base-notebook-s2i) first and push it to docker hub
 
-docker build -f Dockerfile-radanalytics-base-notebook -t base-notebook-s2i .
-docker tag <imageid> tmehrarh/base-notebook-s2i:latest
-docker push tmehrarh/base-notebook-s2i:latest
+- docker build -f Dockerfile-radanalytics-base-notebook -t base-notebook-s2i .
+- docker tag <imageid> tmehrarh/base-notebook-s2i:latest
+- docker push tmehrarh/base-notebook-s2i:latest
 
 # Build the base-notebook image
 This images extends from the base-notebook-s2i image built above
